@@ -934,38 +934,39 @@
               {% csrf_token %}
               <div class="form-row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="text" name="father_name" class="form-control" id="name" placeholder="Your Father Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="father_name" class="form-control" id="name" placeholder="Your Father Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="text" name="cnic" class="form-control" id="cnic" placeholder="Your CNIC Number" data-rule="minlen:4" data-msg="Please enter at least 13 chars" />
+                  <input type="text" name="cnic" class="form-control" id="cnic" placeholder="Your CNIC Number" data-rule="minlen:4" data-msg="Please enter at least 13 chars" required />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="text" name="phone_number" class="form-control" id="phone_number" placeholder="Your Mobile Number" data-rule="minlen:4" data-msg="Please enter at least 11 chars" />
+                  <input type="text" name="phone_number" class="form-control" id="phone_number" placeholder="Your Mobile Number" data-rule="minlen:4" data-msg="Please enter at least 11 chars" required />
                   <div class="validate"></div>
                 </div>
                  <div class="col-md-6 form-group">
-                   <select class="form-control form-control-alternative" name="education" data-rule="minlen:4" data-msg="Please Select Education">
+                   <select class="form-control form-control-alternative" name="education" data-rule="minlen:4" data-msg="Please Select Education" required>
                       <option readonly>Select Education</option>
                       <option value="Matric">Matric</option>
                       <option value="Fsc">Fsc</option>
                       <option value="Bachelor">Bachelor</option>
                       <option value="Master">Master</option>
                       <option value="Phd">Phd</option>
+                      <option value="Under Graduate">Under Graduate</option>
                     </select>
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
-                   <select class="form-control form-control-alternative" name="education" data-rule="minlen:4" data-msg="Please Select Education">
+                   <select class="form-control form-control-alternative" name="education" data-rule="minlen:4" data-msg="Please Select Education" required>
                       <option readonly>Select Course Study</option>
                       <option value="Python">Python</option>
                       <option value="Javascript">Javascript</option>
@@ -982,7 +983,7 @@
                   <div class="validate"></div>
                 </div>
                  <div class="col-md-6 form-group">
-                   <select class="form-control form-control-alternative" name="package" data-rule="minlen:4" data-msg="Please Select Package">
+                   <select class="form-control form-control-alternative" name="package" data-rule="minlen:4" data-msg="Please Select Package" required>
                       <option readonly>Select Package</option>
                       <option value="pythonplus">Python + Artificial Intelligence</option>
                       <option value="pythonplus">Python + Django</option>
@@ -996,23 +997,22 @@
                   <div class="validate"></div>
                 </div>
                  <div class="col-md-6 form-group">
-                  <input  class="form-control form-control-alternative" placeholder="Date" class="textbox-n" type="text" onfocus="(this.type='date')" id="date">
+                  <input  class="form-control form-control-alternative" placeholder="Date" class="textbox-n" type="text" onfocus="(this.type='date')" id="date" required>
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
-                <select class="form-control form-control-alternative" name="status_intro_class" data-rule="minlen:4" data-msg="Please Select">
+                <select class="form-control form-control-alternative" name="status_intro_class" required>
                       <option readonly>Free Introductory Class</option>
                       <option value="Yes">Yes</option>
                       <option value="No">No</option>
                     </select>
-                <div class="validate"></div>
                 </div>
               </div>
               </div>
               <div class="form-group">
               
               <div class="col-md-6 form-group">
-                <textarea class="col-md-6 form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <textarea class="col-md-6 form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message (Optional)"></textarea>
                 <div class="validate"></div>
               </div>
               <!-- <div class="mb-3">

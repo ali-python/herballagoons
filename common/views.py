@@ -31,7 +31,9 @@ class IndexView(FormView):
         return HttpResponseRedirect(reverse('index'))
 
     def form_invalid(self, form):
-        return super(RegisterFormView, self).form_invalid(form)
+        print(form.errors)
+        print("______________________________________")
+        return super(IndexView, self).form_invalid(form)
 
 
 

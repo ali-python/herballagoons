@@ -17,5 +17,5 @@ class Registration(models.Model):
 	mobile_no = models.CharField(max_length=13, blank=True, null=True)
 	date_of_birth = models.DateField(blank=True, null=True)
 	status_not_sure = models.CharField(max_length=13, blank=True, null=True)
-	status_intro_class = models.CharField(max_length=13, blank=True, null=True)
+	status_intro_class = models.CharField(max_length=200, blank=True, null=True)
 	message  = models.TextField(max_length=512, blank=True, null=True)
