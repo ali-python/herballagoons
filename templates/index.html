@@ -51,7 +51,7 @@
           <li class="active"><a href="{% url 'index' %}">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#portfolio">Products</a></li>
           <!-- <li><a href="#team">Team</a></li>
  -->         <!-- <li><a href="#pricing">Pricing</a></li>-->
 <!--           <li><a href="#contact">Register</a></li>
@@ -65,7 +65,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center justify-content-center">
     <div class="container position-relative">
-      <marquee><h1 style="color: red;"></h1></marquee>
+      <marquee><h2 style="color: yellow;">See Our New Products</h2></marquee>
       <h1>Herbal Lagoons SMC (Pvt) Ltd</h1>
       <h2>Good Health Organic lives</h2>
       <a href="#about" class="btn-get-started scrollto">Get Started</a>
@@ -226,7 +226,6 @@ Herbal Lagoons meet the standards and exceed customers’ expectations. We are n
 
       </div>
     </section><!-- End Counts Section -->
- -->
     <!-- ======= Services Section ======= -->
     <!-- <section id="services" class="services">
       <div class="container">
@@ -341,12 +340,12 @@ Herbal Lagoons meet the standards and exceed customers’ expectations. We are n
         </div>
 
       </div>
-    </section><!-- End Services Section --> -->
+    </section><!-- End Services Section --> 
 
   
 
     <!-- ======= Testimonials Section ======= -->
-   <!--  <section id="testimonials" class="testimonials">
+  <!--   <section id="testimonials" class="testimonials">
       <div class="container">
 
         <div class="section-title">
@@ -384,7 +383,7 @@ Herbal Lagoons meet the standards and exceed customers’ expectations. We are n
               Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
-            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+            <img src="assets/img/portfolio/p3.jpeg" class="testimonial-img" alt="">
             <h3>Jena Karlis</h3>
             <h4>Store Owner</h4>
           </div>
@@ -414,14 +413,14 @@ Herbal Lagoons meet the standards and exceed customers’ expectations. We are n
         </div>
 
       </div>
-    --> </section><!-- End Testimonials Section -->
+    </section> --><!-- End Testimonials Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
+          <h2>Products</h2>
           <p></p>
         </div>
 
@@ -449,26 +448,69 @@ Herbal Lagoons meet the standards and exceed customers’ expectations. We are n
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="{% static 'dist/img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">
+            <img src="{% static 'dist/img/portfolio/p3.jpeg' %}" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Organically Dried Mint leaf</h4>
               <p>New</p>
-              <a href="{% static 'dist/img/portfolio/portfolio-1.jpg' %}" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a><!-- 
+              <a href="{% static 'dist/img/portfolio/p3.jpeg' %}" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a><!-- 
               <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="{% static 'dist/img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="{% static 'dist/img/portfolio/p2.jpeg' %}" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Organically Dried Ginger Flakes</h4>
-              <p>Coming soon</p>
-              <a href="{% static 'dist/img/portfolio/portfolio-1.jpg' %}" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a><!-- 
+              <p>New</p>
+              <a href="{% static 'dist/img/portfolio/p2.jpeg' %}" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a><!-- 
+              <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            COming Soon !
+            <img src="{% static 'dist/img/portfolio/p4.jpeg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Comming Soon</h4>
+              <p></p>
+              <a href="{% static 'dist/img/portfolio/p4.jpeg' %}" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a><!-- 
               <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox details-link" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
         </div>
+
+      </div>
+    </section>
+     <section id="products-detail" class="product_details">
+      <div class="container">
+        <div class="section-title">
+          <h2>Products Details</h2>
+          <p>Product Details Benefits by Herbal Lagoons </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="{% static 'dist/img/portfolio/p_d1.jpeg' %}" class="img-fluid" alt=""><br>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <h3>Dehydrated Ginger Flakes</h3>
+            <p>
+             Dried ginger is the dehydrated form of ginger that has undergone a drying process. Ginger
+              turns pale-white when dried. The unpeeled dried ginger is called Brown Ginger whereas the
+              peeled dried ginger is called Light Ginger.<br>
+             <b>Weight loss:</b>Dry ginger facilitates weight loss by improving digestion, which helps in burning stored fat and
+              processing glucose in the blood. It also speeds up metabolism and controls fat absorption, thanks
+              to its thermogenic properties. Another benefit of dry ginger is its ability to curb hunger and
+              overeating..<br>
+            <b>Lowers cholesterol</b>Scientific research has proven that dry ginger helps in the lowering of total cholesterol and
+            triglyceride levels. A 45-day-long study showed significant reductions in cholesterol markers
+            when the subjects consumed around three grams of dry ginger powder per day.<br>
+             <b>Indigestion:</b>Dry ginger also relieves pain and discomfort in the stomach caused by chronic indigestion. A
+              delay in the emptying of the stomach is said to cause indigestion, and ginger has been shown to
+              alleviate this problem. A study of 24 healthy subjects showed that consuming one to two grams
+              of dry ginger powder before a meal speeded up the emptying of the stomach by 50 per cent. <br>
+            </p>
+          </div>
+        </div><br><br>
 
       </div>
     </section><!-- End Portfolio Section -->
@@ -561,14 +603,14 @@ Herbal Lagoons meet the standards and exceed customers’ expectations. We are n
       </div>
     </section><!-- End Team Section -->
 
-    --> <!-- ======= Pricing Section ======= -->
+ <!-- ======= Pricing Section ======= -->
 
 
 
 
 
 
-><!-- End Pricing Section -->
+<!-- End Pricing Section -->
 
     <!-- ======= Frequently Asked Questions Section ======= -->
 <!-- End Frequently Asked Questions Section -->
@@ -625,11 +667,11 @@ Herbal Lagoons meet the standards and exceed customers’ expectations. We are n
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Products</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">P1</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">P2</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">P3</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">P4</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">P5</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Organically Dried Onions Flakes</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Organically Dried Mint leaf</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Organically Dried Ginger Flakes</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">P4 Coming Soon</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">P5 Coming Soon</a></li>
             </ul>
           </div>
 
