@@ -19,3 +19,11 @@ class Registration(models.Model):
 	status_not_sure = models.CharField(max_length=13, blank=True, null=True)
 	status_intro_class = models.CharField(max_length=200, blank=True, null=True)
 	message  = models.TextField(max_length=512, blank=True, null=True)
+
+
+class Gallery(models.Model):
+    name = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='images/')
+    
+    def __str__(self):
+    	return self.name

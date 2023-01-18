@@ -13,6 +13,7 @@ from django.views.generic import TemplateView, RedirectView, UpdateView
 from django.views.generic import FormView
 from django.http import HttpResponseRedirect,HttpResponse
 from .forms import RegisterForm
+from .models import Gallery
 
 # class IndexView(FormView):
 #     template_name = 'index.html'
@@ -34,6 +35,14 @@ class IndexView(FormView):
         print(form.errors)
         print("______________________________________")
         return super(IndexView, self).form_invalid(form)
+
+    def get_context_data(self, **kwargs):
+        context = super(IndexView, self).get_context_data(**kwargs)
+        gallery = Gallery.objects.all()
+        context.update({
+            'gallery': gallery
+        })
+        return context
 
 
 
